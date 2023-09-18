@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --header-background-color: white;
+    --side-menu-background-color: white;
+    --menu-link-background-color: white;
+    --menu-link-font-color: black;
+    --menu-link-hover-background-color: gray;
+    --main-content-background-color: white;
+    --border1: 1px solid rgba(0, 0, 0, 0.3);
+    --post-title-background-color: white;
+    --post-container-background-color: white;
+    --comment-form-textarea-color: white;
+    --submit-button-div-color: white;
+    --comment-container-color: white;
+    --comment-text-background-color: white;
+    --comment-footer-color: white;
+    --comment-related-button-color: white;
+    --button-hover-color: gray;
+    --delete-popup-content-background-color: white;
+    --shadow-color-1: rgba(0, 0, 0, 0.3);
+    --shadow-color-2: rgba(0, 0, 0, 0.5);
+    --new-post-form-background-color: white;
+    --new-post-body-and-title-background-color: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1080px){
+    .post-container,
+    .comment-container,
+    .new-post-form{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .post-container,
+    .comment-container,
+    .new-post-form{
+        width: 450px;
+    }
+
+    .comment-footer{
+        height: 100%;
+        padding: 0;
+    }
+
+    .comment-footer-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .comment-footer-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-related-button{
+        margin: 3px;
+    }
+
+    .side-menu.open{
+        z-index: 1;
+        width: 350px;
+    }
+
+    .main-content.open{
+        left: 0;
+        width: 100vw;
+    }
+}

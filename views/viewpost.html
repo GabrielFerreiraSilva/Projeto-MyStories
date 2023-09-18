@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/header_and_sidemenu.css">
+    <link rel="stylesheet" href="../styles/post_view_container.css">
+    <link rel="stylesheet" href="../styles/comments_structure.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <title>View Post</title>
+</head>
+<body>
+    
+    <header class="main-header">
+        <i onclick="moveMenu()" class='bx bx-menu menu-icon'></i>
+        <span class="site-logo">MyStories</span>
+    </header>
+
+    <nav class="side-menu">
+        <a href="#" class="menu-link">
+            <i class='bx bx-home link-icon'></i>
+            <span class="link-name">Home</span>
+        </a>
+        <a href="#" class="menu-link">
+            <i class='bx bx-book-open link-icon'></i>
+            <span class="link-name">New Story</span>
+        </a>     
+        <a href="#" class="menu-link">
+            <i class='bx bx-user link-icon'></i>
+            <span class="link-name">Profile</span>
+        </a>
+        <a href="#" class="menu-link">
+            <i class='bx bx-cog link-icon'></i>
+            <span class="link-name">Settings</span>
+        </a>
+        <a href="#" class="menu-link">
+            <i class='bx bx-log-out link-icon'></i>
+            <span class="link-name">Logout</span>
+        </a>
+    </nav>
+
+    <main class="main-content">
+        <article class="post-container">
+            <h1 class="post-title"></h1>
+            <p class="post-body"></p>
+        </article>
+
+        <div class="comment-container">
+            <div class="add-new-comment-div">
+                <button onclick="add_new_comment(this)" class="comment-related-button">Add New Comment</button>
+            </div>
+            <form class="new-comment-form" onsubmit="event.preventDefault(); createNewComment(this);">
+                <textarea name="comment-text" class="comment-text" required spellcheck="false"></textarea>
+                <div class="submit-button-div">
+                    <button type="submit" class="comment-related-button">Add Comment</button>
+                </div>   
+            </form>
+        </div>
+    </main>
+
+    <script src="../scripts/post_injection.js"></script>
+    <script src="../scripts/sidemenu.js"></script>
+    <script src="../scripts/comments_structure.js"></script>
+
+</body>
+</html>

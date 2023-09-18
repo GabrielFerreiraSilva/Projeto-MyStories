@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/header_and_sidemenu.css">
+    <link rel="stylesheet" href="../styles/create_post.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <title>Create New Story</title>
+</head>
+<body>
+    <header class="main-header">
+        <i onclick="moveMenu()" class='bx bx-menu menu-icon'></i>
+        <span class="site-logo">MyStories</span>
+    </header>
+
+    <nav class="side-menu">
+        <a href="#" class="menu-link">
+            <i class='bx bx-home link-icon'></i>
+            <span class="link-name">Home</span>
+        </a>
+        <a href="#" class="menu-link">
+            <i class='bx bx-book-open link-icon'></i>
+            <span class="link-name">New Story</span>
+        </a>     
+        <a href="#" class="menu-link">
+            <i class='bx bx-user link-icon'></i>
+            <span class="link-name">Profile</span>
+        </a>
+        <a href="#" class="menu-link">
+            <i class='bx bx-cog link-icon'></i>
+            <span class="link-name">Settings</span>
+        </a>
+        <a href="#" class="menu-link">
+            <i class='bx bx-log-out link-icon'></i>
+            <span class="link-name">Logout</span>
+        </a>
+    </nav>
+
+    <main class="main-content">
+        <form action="#" class="new-post-form" onsubmit="event.preventDefault(); submitPostForm(this)">
+            <textarea name="post-title" id="post-title" class="post-title" spellcheck="false" required placeholder="Post title"></textarea>
+            <textarea name="post-content" id="text-area" class="post-body" spellcheck="false" required placeholder="Post content"></textarea>
+            <div class="button-area">
+                <button type="submit" class="submit-button">Post</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="../scripts/creat_post.js"></script>
+    <script src="../scripts/sidemenu.js"></script>
+
+</body>
+</html>

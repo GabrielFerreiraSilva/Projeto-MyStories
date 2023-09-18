@@ -1,0 +1,23 @@
+.post-container{
+    background-color: var(--post-container-background-color);
+    width: 800px;
+    margin: 30px auto;
+    border-radius: 8px;
+    border: 1px solid var(--shadow-color-2);
+}
+
+.post-title{
+    background-color: var(--post-title-background-color);
+    min-height: 40px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--shadow-color-1);
+}
+
+.post-body{
+    min-height: 110px;
+    padding: 10px;
+    font-size: 1.1em;
+}
