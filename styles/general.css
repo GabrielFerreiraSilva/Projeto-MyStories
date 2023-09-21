@@ -77,3 +77,11 @@
         width: 100vw;
     }
 }
+
+@media screen and (max-width: 500px){
+    .post-container,
+    .comment-container,
+    .new-post-form{
+        width: calc(100vw - 40px);
+    }
+}
