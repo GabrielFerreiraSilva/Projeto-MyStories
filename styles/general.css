@@ -22,6 +22,9 @@
     --shadow-color-2: rgba(0, 0, 0, 0.5);
     --new-post-form-background-color: white;
     --new-post-body-and-title-background-color: white;
+    --story-block-text-background-color: white;
+    --story-block-title-background-color: white;
+    --story-block-title-font-color: black;
 }
 
 *{
@@ -34,16 +37,26 @@
 @media screen and (max-width: 1080px){
     .post-container,
     .comment-container,
-    .new-post-form{
+    .new-post-form,
+    .home-content-container{
         width: 550px;
+    }
+
+    .story-block{
+        width: 265px;
     }
 }
 
 @media screen and (max-width: 830px){
     .post-container,
     .comment-container,
-    .new-post-form{
+    .new-post-form,
+    .home-content-container{
         width: 400px;
+    }
+
+    .story-block{
+        width: inherit;
     }
 
     .comment-footer{
@@ -87,10 +100,5 @@
 
     .comment-related-button{
         height: 100%;
-    }
-
-    .side-menu.open{
-        z-index: 1;
-        width: 150px;
     }
 }

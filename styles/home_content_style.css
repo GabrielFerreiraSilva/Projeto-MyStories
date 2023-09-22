@@ -1,0 +1,34 @@
+.home-content-container{
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.story-block{
+    background-color: var(--story-block-text-background-color);
+    width: 385px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--shadow-color-2);
+    border-radius: 5px;
+}
+
+.block-link{
+    text-decoration: none;
+    color: var(--story-block-title-font-color);
+}
+
+.block-title{
+    background-color: var(--story-block-title-background-color);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.block-text{
+    max-height: 150px;
+    overflow-y: hidden;
+    padding-top: 10px;
+    border-top: 1px solid var(--shadow-color-1);
+}

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../styles/header_and_sidemenu.css">
-    <link rel="stylesheet" href="../styles/create_post.css">
+    <link rel="stylesheet" href="../styles/home_content_style.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <title>Create New Story</title>
+    <title>Home</title>
 </head>
 <body>
+    
     <header class="main-header">
         <i onclick="moveMenu()" class='bx bx-menu menu-icon'></i>
         <span class="site-logo">MyStories</span>
@@ -39,16 +40,43 @@
     </nav>
 
     <main class="main-content">
-        <form action="#" class="new-post-form" onsubmit="event.preventDefault(); submitPostForm(this)">
-            <textarea name="post-title" id="post-title" class="post-title" spellcheck="false" required placeholder="Post title"></textarea>
-            <textarea name="post-content" id="text-area" class="post-body" spellcheck="false" required placeholder="Post content"></textarea>
-            <div class="button-area">
-                <button type="submit" class="submit-button">Post</button>
+        
+        <div class="home-content-container">
+
+            <div class="story-block">
+
+                <a href="#" class="block-link">
+                    <h1 class="block-title">Title of the story</h1>
+                </a>
+
+                <p class="block-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aperiam deleniti hic? Rem unde odio modi sit consectetur illum officia porro facere sapiente quos. Veniam.</p>
+
             </div>
-        </form>
+
+            <div class="story-block">
+
+                <a href="#" class="block-link">
+                    <h1 class="block-title">Title of the story</h1>
+                </a>
+
+                <p class="block-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aperiam deleniti hic? Rem unde odio modi sit consectetur illum officia porro facere sapiente quos. Veniam.</p>
+
+            </div>
+
+            <div class="story-block">
+
+                <a href="#" class="block-link">
+                    <h1 class="block-title">Title of the story</h1>
+                </a>
+
+                <p class="block-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt aperiam deleniti hic? Rem unde odio modi sit consectetur illum officia porro facere sapiente quos. Veniam.</p>
+
+            </div>
+
+        </div>
+
     </main>
 
-    <script src="../scripts/creat_post.js"></script>
     <script src="../scripts/sidemenu.js"></script>
 
 </body>
