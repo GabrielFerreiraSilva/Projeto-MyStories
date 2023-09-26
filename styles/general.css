@@ -94,7 +94,8 @@
 @media screen and (max-width: 500px){
     .post-container,
     .comment-container,
-    .new-post-form{
+    .new-post-form,
+    .home-content-container{
         width: calc(100vw - 40px);
     }
 
