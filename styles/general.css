@@ -25,6 +25,8 @@
     --story-block-text-background-color: white;
     --story-block-title-background-color: white;
     --story-block-title-font-color: black;
+    --login-form-background-color: white;
+    --login-form-label-background-color: white;
 }
 
 *{
